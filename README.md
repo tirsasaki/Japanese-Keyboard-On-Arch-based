@@ -1,11 +1,11 @@
 <div align="center">
 
-# 🇯🇵 Japanese Input on CachyOS
+# 🇯🇵 Japanese Input on Arch Linux
 
-**Type Hiragana, Katakana, and Kanji on CachyOS with Fcitx5 and Mozc.**
+**Type Hiragana, Katakana, and Kanji on Arch Linux and Arch-based distributions with Fcitx5 and Mozc.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-![Platform](https://img.shields.io/badge/Platform-CachyOS-00b3a4?style=flat-square&logo=archlinux&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Arch--based-1793d1?style=flat-square&logo=archlinux&logoColor=white)
 ![Desktop](https://img.shields.io/badge/Desktop-KDE%20Plasma-1d99f3?style=flat-square&logo=kde&logoColor=white)
 ![IME](https://img.shields.io/badge/IME-Fcitx5%20%2B%20Mozc-e60012?style=flat-square)
 ![Session](https://img.shields.io/badge/Session-Wayland%20%7C%20X11-6f42c1?style=flat-square)
@@ -22,9 +22,24 @@
 
 ## 📖 Overview
 
-This guide sets up Japanese text input on **CachyOS** using **Fcitx5** as the input method framework and **Mozc** as the Japanese conversion engine. It works with KDE Plasma and other desktop environments.
+This guide sets up Japanese text input on **Arch Linux and Arch-based distributions** using **Fcitx5** as the input method framework and **Mozc** as the Japanese conversion engine. It was written with **CachyOS** and KDE Plasma in mind, and the steps apply to other desktop environments as well.
 
-**What this guide covers**
+### Supported distributions
+
+Any distribution that uses `pacman` and the Arch repositories can follow this guide as written:
+
+| Distribution | Notes |
+|---|---|
+| **Arch Linux** | Steps apply directly |
+| **CachyOS** | Primary reference system for this guide |
+| **EndeavourOS** | Uses the Arch repositories, so the steps should apply directly |
+| **Manjaro** | Uses its own repositories, so package versions may lag behind Arch |
+| **Other Arch-based distros** | Anything that provides `pacman` and the same package names |
+
+> [!NOTE]
+> The desktop steps (Virtual Keyboard, Wayland vs X11, environment variables) depend on your **desktop environment**, not your distribution. The KDE Plasma steps below apply to any distro that runs KDE Plasma.
+
+### What this guide covers
 
 - ✅ KDE Plasma on **Wayland** (recommended path)
 - ✅ KDE Plasma on **X11**
